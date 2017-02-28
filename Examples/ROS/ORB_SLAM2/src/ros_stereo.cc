@@ -33,8 +33,11 @@
 
 #include<nav_msgs/Odometry.h>
 #include<geometry_msgs/PoseWithCovarianceStamped.h>
+#include "geometry_msgs/PoseStamped.h"
+#include <tf/transform_broadcaster.h>
 
 #include<opencv2/core/core.hpp>
+#include "Converter.h"
 
 #include<include/System.h>
 
@@ -54,7 +57,8 @@ public:
                     const sensor_msgs::ImageConstPtr& msgRight);
 
     void PoseCallback(const nav_msgs::OdometryConstPtr& msgOdometry, const geometry_msgs::PoseWithCovarianceStampedConstPtr& msgPose);
-
+    void PublishPose(cv::Mat Tcw);
+    ros::Publisher* pPosPub;
     ORB_SLAM2::System* mpSLAM;
     bool do_rectify;
     cv::Mat M1l,M2l,M1r,M2r;
@@ -64,6 +68,7 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "RGBD");
     ros::start();
+    bool bReuseMap = false;
 
     if(argc != 4)
     {
@@ -73,7 +78,12 @@ int main(int argc, char **argv)
     }    
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true);
+	if (!strcmp(argv[3], "true"))
+    {
+		bReuseMap = true;
+	}
+
+    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true, bReuseMap);
 
     ImageGrabber igb(&SLAM);
 
@@ -124,6 +134,11 @@ int main(int argc, char **argv)
     message_filters::Subscriber<sensor_msgs::Image> left_sub(nh, "/cam0/image_raw", 1);
     message_filters::Subscriber<sensor_msgs::Image> right_sub(nh, "/cam1/image_raw", 1);
 
+    // Pose broadcaster
+    //pPosPub = new ros::Publisher;
+    ros::Publisher PosPub = nodeHandler.advertise<geometry_msgs::PoseStamped>("ORB_SLAM/pose", 5);
+    igb.pPosPub = &(PosPub);
+
     int useExtOdo = fsSettings["Tracking.MotionModelSource"];
     int useExtInit = fsSettings["Tracking.InitialPosition"];
 
@@ -157,6 +172,8 @@ int main(int argc, char **argv)
 
     // Stop all threads
     SLAM.Shutdown();
+
+    SLAM.SaveMap("Slam_latest_Map.bin");
 
     // Save camera trajectory
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_TUM_Format.txt");
@@ -216,11 +233,11 @@ void ImageGrabber::GrabStereo(const sensor_msgs::ImageConstPtr& msgLeft,
         }
 
 
-        mpSLAM->TrackStereo(imLeft, imRight, cv_ptrLeft->header.stamp.toSec());
+        cv::MatTcw= mpSLAM->TrackStereo(imLeft, imRight, cv_ptrLeft->header.stamp.toSec());
     } else {
-        mpSLAM->TrackStereo(cv_ptrLeft->image, cv_ptrRight->image, cv_ptrLeft->header.stamp.toSec());
+        cv::MatTcw= mpSLAM->TrackStereo(cv_ptrLeft->image, cv_ptrRight->image, cv_ptrLeft->header.stamp.toSec());
     }
-
+    PublishPose(Tcw);
 }
 
 void ImageGrabber::PoseCallback(const nav_msgs::OdometryConstPtr& msgOdometry, const geometry_msgs::PoseWithCovarianceStampedConstPtr& msgPose)
@@ -233,6 +250,26 @@ void ImageGrabber::PoseCallback(const nav_msgs::OdometryConstPtr& msgOdometry, c
     {
         mpSLAM->SetTrackerInitialPose(msgOdometry, msgPose);
     }
+}
+
+void ImageGrabber::PublishPose(cv::Mat Tcw)
+{
+    geometry_msgs::PoseStamped poseMSG;
+    if(!Tcw.empty()) {
+        cv::Mat Rwc = Tcw.rowRange(0,3).colRange(0,3).t();
+        cv::Mat twc = -Rwc*Tcw.rowRange(0,3).col(3);
+        vector<float> q = ORB_SLAM2::Converter::toQuaternion(Rwc);
+        poseMSG.pose.position.x = twc.at<float>(0);
+        poseMSG.pose.position.y = twc.at<float>(2);
+        poseMSG.pose.position.z = twc.at<float>(1);
+        poseMSG.pose.orientation.x = q[0];
+        poseMSG.pose.orientation.y = q[1];
+        poseMSG.pose.orientation.z = q[2];
+        poseMSG.pose.orientation.w = q[3];
+        poseMSG.header.frame_id = "VSLAM";
+        poseMSG.header.stamp = ros::Time::now();
+        (pPosPub)->publish(poseMSG);
+   }
 }
 
 

@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="ORB_SLAM2" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="run_tests" />
+      <config projectName="ORB_SLAM2" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="rgbd_tum" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="download_extra_data" />
+      <config projectName="ORB_SLAM2" targetName="roscpp_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="ORB_SLAM2" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="_catkin_empty_exported_target" />
+      <config projectName="ORB_SLAM2" targetName="stereo_euroc" />
+      <config projectName="ORB_SLAM2" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="stereo_kitti" />
+      <config projectName="ORB_SLAM2" targetName="tf_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="ros_stereo" />
+      <config projectName="ORB_SLAM2" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="tf_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="tf_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="tests" />
+      <config projectName="ORB_SLAM2" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="mono_euroc" />
+      <config projectName="ORB_SLAM2" targetName="gtest_main" />
+      <config projectName="ORB_SLAM2" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="gtest" />
+      <config projectName="ORB_SLAM2" targetName="std_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="clean_test_results" />
+      <config projectName="ORB_SLAM2" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="ORB_SLAM2" targetName="mono_tum" />
+      <config projectName="ORB_SLAM2" targetName="mono_kitti" />
+      <config projectName="ORB_SLAM2" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="ORB_SLAM2" targetName="doxygen" />
+      <config projectName="ORB_SLAM2" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="ORB_SLAM2" targetName="tf2_msgs_generate_messages_lisp" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb09170f-1d1a-4ec9-85ae-83219c685433" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tracking.cc" afterPath="$PROJECT_DIR$/src/Tracking.cc" />
+    </list>
+    <ignored path="ORB_SLAM2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ORB_SLAM2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PoseOpti</find>
+      <find>was</find>
+      <find>TH</find>
+      <find>ORBextractor.iniThFAST</find>
+      <find>fix</find>
+      <find>STOP</find>
+      <find>exiting</find>
+      <find>Need</find>
+      <find>UpdateModio</find>
+      <find>mEx</find>
+      <find>Drawer</find>
+      <find>last fr</find>
+      <find>TrackWith</find>
+      <find>TrackS</find>
+      <find>Wea</find>
+      <find>setWe</find>
+      <find>mVelo</find>
+      <find>SetM</find>
+      <find>Sa</find>
+      <find>Shutof</find>
+      <find>features</find>
+      <find>SetN</find>
+      <find>nFeatures</find>
+      <find>FAST(</find>
+      <find>thread</find>
+      <find>included</find>
+      <find>mvL</find>
+      <find>mv</find>
+      <find>PoseOptim</find>
+      <find>cout</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ORBmatcher.cc" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/manifest.xml" />
+        <option value="$PROJECT_DIR$/include/Converter.h" />
+        <option value="$PROJECT_DIR$/src/KeyFrameDatabase.cc" />
+        <option value="$PROJECT_DIR$/../../servo_launch.launch" />
+        <option value="$PROJECT_DIR$/Examples/Monocular/mono_euroc.cc" />
+        <option value="$PROJECT_DIR$/Examples/RGB-D/rgbd_tum.cc" />
+        <option value="$PROJECT_DIR$/Examples/Stereo/stereo_kitti.cc" />
+        <option value="$PROJECT_DIR$/Examples/Monocular/mono_kitti.cc" />
+        <option value="$PROJECT_DIR$/Examples/Monocular/mono_tum.cc" />
+        <option value="$PROJECT_DIR$/Examples/Stereo/stereo_euroc.cc" />
+        <option value="$PROJECT_DIR$/include/System.h" />
+        <option value="$PROJECT_DIR$/src/LoopClosing.cc" />
+        <option value="$PROJECT_DIR$/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp" />
+        <option value="$PROJECT_DIR$/Examples/ROS/orb_slam2/src/ros_stereo.cc" />
+        <option value="$PROJECT_DIR$/Examples/ROS/orb_slam2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Converter.cc" />
+        <option value="$PROJECT_DIR$/src/FrameDrawer.cc" />
+        <option value="$PROJECT_DIR$/src/MapDrawer.cc" />
+        <option value="$PROJECT_DIR$/include/Frame.h" />
+        <option value="$PROJECT_DIR$/include/KeyFrame.h" />
+        <option value="$PROJECT_DIR$/src/KeyFrame.cc" />
+        <option value="$PROJECT_DIR$/include/Tracking.h" />
+        <option value="$PROJECT_DIR$/include/Map.h" />
+        <option value="$PROJECT_DIR$/src/Map.cc" />
+        <option value="$PROJECT_DIR$/src/System.cc" />
+        <option value="$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc" />
+        <option value="$PROJECT_DIR$/include/ORBextractor.h" />
+        <option value="$PROJECT_DIR$/src/ORBextractor.cc" />
+        <option value="$PROJECT_DIR$/include/Optimizer.h" />
+        <option value="$PROJECT_DIR$/Examples/Stereo/EuRoC.yaml" />
+        <option value="$PROJECT_DIR$/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h" />
+        <option value="$PROJECT_DIR$/src/Optimizer.cc" />
+        <option value="$PROJECT_DIR$/Examples/Stereo/ARC.yaml" />
+        <option value="$PROJECT_DIR$/src/Tracking.cc" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>C/C++</id>
+          </State>
+          <State>
+            <id>GeneralC/C++</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GeneralC/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thirdparty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g2o" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thirdparty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g2o" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g2o" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thirdparty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g2o" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g2o" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thirdparty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orb_slam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orb_slam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Optimizer.cc" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="mono_euroc" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="mono_euroc" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ORB_SLAM2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mono_euroc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="mono_euroc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="mono_euroc">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mono_kitti" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="mono_kitti" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="mono_kitti">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mono_tum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="mono_tum" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="mono_tum">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ORB_SLAM2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="ORB_SLAM2" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rgbd_tum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="rgbd_tum" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="rgbd_tum">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="stereo_euroc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="stereo_euroc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="stereo_euroc">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="stereo_kitti" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="stereo_kitti" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="stereo_kitti">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ros_stereo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ORB_SLAM2" TARGET_NAME="ros_stereo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ORB_SLAM2" RUN_TARGET_NAME="ros_stereo">
+      <envs />
+      <method />
+    </configuration>
+    <list size="44">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.mono_euroc" />
+      <item index="2" class="java.lang.String" itemvalue="Application.mono_kitti" />
+      <item index="3" class="java.lang.String" itemvalue="Application.mono_tum" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ORB_SLAM2" />
+      <item index="5" class="java.lang.String" itemvalue="Application.rgbd_tum" />
+      <item index="6" class="java.lang.String" itemvalue="Application.stereo_euroc" />
+      <item index="7" class="java.lang.String" itemvalue="Application.stereo_kitti" />
+      <item index="8" class="java.lang.String" itemvalue="Application._catkin_empty_exported_target" />
+      <item index="9" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_cpp" />
+      <item index="10" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_lisp" />
+      <item index="11" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_py" />
+      <item index="12" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_cpp" />
+      <item index="13" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_lisp" />
+      <item index="14" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_py" />
+      <item index="15" class="java.lang.String" itemvalue="Application.clean_test_results" />
+      <item index="16" class="java.lang.String" itemvalue="Application.download_extra_data" />
+      <item index="17" class="java.lang.String" itemvalue="Application.doxygen" />
+      <item index="18" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item index="19" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item index="20" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item index="21" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item index="22" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item index="23" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_py" />
+      <item index="24" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item index="25" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item index="26" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item index="27" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="28" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_cpp" />
+      <item index="29" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_lisp" />
+      <item index="30" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_py" />
+      <item index="31" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item index="32" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item index="33" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_py" />
+      <item index="34" class="java.lang.String" itemvalue="Application.tests" />
+      <item index="35" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_cpp" />
+      <item index="36" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_lisp" />
+      <item index="37" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_py" />
+      <item index="38" class="java.lang.String" itemvalue="Application.tf_generate_messages_cpp" />
+      <item index="39" class="java.lang.String" itemvalue="Application.tf_generate_messages_lisp" />
+      <item index="40" class="java.lang.String" itemvalue="Application.tf_generate_messages_py" />
+      <item index="41" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="42" class="java.lang.String" itemvalue="Application.gtest_main" />
+      <item index="43" class="java.lang.String" itemvalue="Application.ros_stereo" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb09170f-1d1a-4ec9-85ae-83219c685433" name="Default" comment="" />
+      <created>1478866713221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1478866713221</updated>
+      <workItem from="1478866714618" duration="5000" />
+      <workItem from="1478866728749" duration="2097000" />
+      <workItem from="1478878460871" duration="648000" />
+      <workItem from="1478943609135" duration="50000" />
+      <workItem from="1479225716229" duration="15284000" />
+      <workItem from="1479249348247" duration="6127000" />
+      <workItem from="1479255496282" duration="2867000" />
+      <workItem from="1479371554762" duration="21000" />
+      <workItem from="1479385320959" duration="20000" />
+      <workItem from="1479486479447" duration="5189000" />
+      <workItem from="1479550254452" duration="22300000" />
+      <workItem from="1479662078840" duration="2378000" />
+      <workItem from="1479664474571" duration="1290000" />
+      <workItem from="1479727945125" duration="9247000" />
+      <workItem from="1479805421308" duration="10266000" />
+      <workItem from="1479904623666" duration="1694000" />
+      <workItem from="1479915173532" duration="445000" />
+      <workItem from="1479997809997" duration="562000" />
+      <workItem from="1480064092568" duration="2325000" />
+      <workItem from="1480066457798" duration="1525000" />
+      <workItem from="1480068933923" duration="7213000" />
+      <workItem from="1480086897050" duration="9456000" />
+      <workItem from="1480335975476" duration="9211000" />
+      <workItem from="1480354106738" duration="4131000" />
+      <workItem from="1480438930689" duration="3174000" />
+      <workItem from="1480515501767" duration="4709000" />
+      <workItem from="1480603129558" duration="446000" />
+      <workItem from="1480770493726" duration="9024000" />
+      <workItem from="1480944273544" duration="13270000" />
+      <workItem from="1481012394202" duration="17267000" />
+      <workItem from="1481046913480" duration="8596000" />
+      <workItem from="1481102786786" duration="4552000" />
+      <workItem from="1481275580255" duration="88000" />
+      <workItem from="1481461942427" duration="4391000" />
+      <workItem from="1481546899371" duration="49000" />
+      <workItem from="1481546995630" duration="2530000" />
+      <workItem from="1481550032913" duration="21000" />
+      <workItem from="1481550080897" duration="51000" />
+      <workItem from="1481551307452" duration="15579000" />
+      <workItem from="1481617933332" duration="29881000" />
+      <workItem from="1481654981423" duration="1759000" />
+      <workItem from="1481704523975" duration="5760000" />
+      <workItem from="1481728917734" duration="35000" />
+      <workItem from="1481873749797" duration="172000" />
+      <workItem from="1481873941977" duration="9371000" />
+      <workItem from="1482052150249" duration="21211000" />
+      <workItem from="1482140214281" duration="12899000" />
+      <workItem from="1482247054311" duration="4446000" />
+      <workItem from="1482411933181" duration="8015000" />
+      <workItem from="1482841231353" duration="18431000" />
+      <workItem from="1483369895982" duration="11000" />
+      <workItem from="1483369928319" duration="587000" />
+      <workItem from="1483371005165" duration="32718000" />
+      <workItem from="1483463705344" duration="2419000" />
+      <workItem from="1483515100062" duration="1131000" />
+      <workItem from="1483516350971" duration="1408000" />
+      <workItem from="1483517989058" duration="245000" />
+      <workItem from="1483518543641" duration="21408000" />
+      <workItem from="1483618773115" duration="30158000" />
+      <workItem from="1483724914591" duration="144000" />
+      <workItem from="1483789835313" duration="2953000" />
+      <workItem from="1483977011572" duration="917000" />
+      <workItem from="1484032609375" duration="22951000" />
+      <workItem from="1484083300535" duration="3729000" />
+      <workItem from="1484211558395" duration="17000" />
+      <workItem from="1484318979121" duration="4467000" />
+      <workItem from="1484408487871" duration="6284000" />
+      <workItem from="1484488981706" duration="1290000" />
+      <workItem from="1484829791006" duration="153000" />
+      <workItem from="1484852316904" duration="1745000" />
+      <workItem from="1484898055040" duration="4934000" />
+      <workItem from="1484931355202" duration="22255000" />
+      <workItem from="1486033859840" duration="608000" />
+      <workItem from="1486214429381" duration="15000" />
+      <workItem from="1487770141791" duration="188000" />
+      <workItem from="1487836261200" duration="5134000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="477947000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.48956662" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2293578" sideWeight="0.48802084" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2293578" sideWeight="0.51197916" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.48956662" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2293578" sideWeight="0.48802084" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2293578" sideWeight="0.51197916" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="27" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/orb_slam2/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sh" />
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/manifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/build/catkin/catkin_generated/version/package.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/orb_slam2/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/cmake-build-debug/CMakeFiles/clion-log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/orb_slam2/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/RGB-D/rgbd_tum.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="2" lean-forward="false" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapPoint.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/4.8/bits/stl_map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="146" column="57" lean-forward="false" selection-start-line="146" selection-start-column="57" selection-end-line="146" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/g2o/core/optimizable_graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="306" column="13" lean-forward="false" selection-start-line="306" selection-start-column="13" selection-end-line="306" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrameDrawer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="177" column="26" lean-forward="false" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FrameDrawer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/MapDrawer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapDrawer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Converter.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="40" lean-forward="false" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoopClosing.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11250">
+          <caret line="750" column="18" lean-forward="false" selection-start-line="750" selection-start-column="18" selection-end-line="750" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/System.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="159" column="12" lean-forward="false" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/4.8/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="247" column="6" lean-forward="false" selection-start-line="247" selection-start-column="6" selection-end-line="247" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/stereo_euroc.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1005">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/ORB_SLAM2/src/ros_stereo.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2010">
+          <caret line="134" column="66" lean-forward="false" selection-start-line="134" selection-start-column="66" selection-end-line="134" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/4.8/thread">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/opencv2/core/types_c.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="149" column="10" lean-forward="false" selection-start-line="149" selection-start-column="10" selection-end-line="149" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/opencv2/features2d/features2d.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9975">
+          <caret line="665" column="0" lean-forward="false" selection-start-line="665" selection-start-column="0" selection-end-line="665" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/KeyFrame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Frame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frame.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="186" column="60" lean-forward="false" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Optimizer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="46" column="75" lean-forward="false" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ORBextractor.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="419" column="26" lean-forward="false" selection-start-line="419" selection-start-column="26" selection-end-line="419" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/EuRoC.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="87" column="27" lean-forward="false" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ORBextractor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Converter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="50" column="47" lean-forward="false" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeyFrame.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="200" column="14" lean-forward="false" selection-start-line="200" selection-start-column="14" selection-end-line="200" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LocalMapping.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Tracking.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="951">
+          <caret line="183" column="5" lean-forward="false" selection-start-line="183" selection-start-column="5" selection-end-line="183" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ORBmatcher.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="996">
+          <caret line="1647" column="0" lean-forward="false" selection-start-line="1647" selection-start-column="0" selection-end-line="1647" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/g2o/stuff/timeutil.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2691">
+          <caret line="258" column="28" lean-forward="true" selection-start-line="258" selection-start-column="28" selection-end-line="258" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/ARC.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <folding>
+            <marker date="1487669693000" expanded="true" signature="0:9" ph="%YAML:1.0" />
+            <marker date="1487669693000" expanded="true" signature="302:312" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="324:334" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="346:356" ph="396.163179" />
+            <marker date="1487669693000" expanded="true" signature="368:378" ph="261.288740" />
+            <marker date="1487669693000" expanded="true" signature="391:394" ph="0.0" />
+            <marker date="1487669693000" expanded="true" signature="406:409" ph="0.0" />
+            <marker date="1487669693000" expanded="true" signature="421:424" ph="0.0" />
+            <marker date="1487669693000" expanded="true" signature="436:439" ph="0.0" />
+            <marker date="1487669693000" expanded="true" signature="455:458" ph="752" />
+            <marker date="1487669693000" expanded="true" signature="474:477" ph="480" />
+            <marker date="1487669693000" expanded="true" signature="519:523" ph="20.0" />
+            <marker date="1487669693000" expanded="true" signature="563:572" ph="51.817399" />
+            <marker date="1487669693000" expanded="true" signature="721:723" ph="35" />
+            <marker date="1487669693000" expanded="true" signature="1046:1049" ph="480" />
+            <marker date="1487669693000" expanded="true" signature="1062:1065" ph="752" />
+            <marker date="1487669693000" expanded="true" signature="1066:1181" ph="LEFT.D: &lt;3 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1124:1181" ph="data:[-0.… 0.000000]" />
+            <marker date="1487669693000" expanded="true" signature="1182:1344" ph="LEFT.K: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1240:1344" ph="data: [9 items]" />
+            <marker date="1487669693000" expanded="true" signature="1247:1257" ph="469.079122" />
+            <marker date="1487669693000" expanded="true" signature="1259:1267" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1269:1279" ph="396.163179" />
+            <marker date="1487669693000" expanded="true" signature="1281:1289" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1291:1301" ph="468.929504" />
+            <marker date="1487669693000" expanded="true" signature="1303:1313" ph="261.288740" />
+            <marker date="1487669693000" expanded="true" signature="1315:1323" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1325:1333" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1335:1343" ph="1.000000" />
+            <marker date="1487669693000" expanded="true" signature="1345:1503" ph="LEFT.R: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1404:1503" ph="data: [9 items]" />
+            <marker date="1487669693000" expanded="true" signature="1411:1419" ph="0.999996" />
+            <marker date="1487669693000" expanded="true" signature="1421:1429" ph="0.001155" />
+            <marker date="1487669693000" expanded="true" signature="1431:1440" ph="-0.002605" />
+            <marker date="1487669693000" expanded="true" signature="1442:1451" ph="-0.001149" />
+            <marker date="1487669693000" expanded="true" signature="1453:1461" ph="0.999996" />
+            <marker date="1487669693000" expanded="true" signature="1463:1471" ph="0.002609" />
+            <marker date="1487669693000" expanded="true" signature="1473:1481" ph="0.002608" />
+            <marker date="1487669693000" expanded="true" signature="1483:1492" ph="-0.002606" />
+            <marker date="1487669693000" expanded="true" signature="1494:1502" ph="0.999993" />
+            <marker date="1487669693000" expanded="true" signature="1504:1697" ph="LEFT.P: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1563:1697" ph="data: [12 items]" />
+            <marker date="1487669693000" expanded="true" signature="1570:1580" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="1582:1590" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1592:1602" ph="387.789700" />
+            <marker date="1487669693000" expanded="true" signature="1604:1612" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1614:1622" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1624:1634" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="1636:1646" ph="241.582283" />
+            <marker date="1487669693000" expanded="true" signature="1648:1656" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1658:1666" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1668:1676" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1678:1686" ph="1.000000" />
+            <marker date="1487669693000" expanded="true" signature="1688:1696" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1713:1716" ph="480" />
+            <marker date="1487669693000" expanded="true" signature="1730:1733" ph="752" />
+            <marker date="1487669693000" expanded="true" signature="1734:1851" ph="RIGHT.D: &lt;3 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1793:1851" ph="data:[-0.… 0.000000]" />
+            <marker date="1487669693000" expanded="true" signature="1852:2015" ph="RIGHT.K: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="1911:2015" ph="data: [9 items]" />
+            <marker date="1487669693000" expanded="true" signature="1918:1928" ph="466.386207" />
+            <marker date="1487669693000" expanded="true" signature="1930:1938" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1940:1950" ph="366.755083" />
+            <marker date="1487669693000" expanded="true" signature="1952:1960" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1962:1972" ph="466.376617" />
+            <marker date="1487669693000" expanded="true" signature="1974:1984" ph="223.429515" />
+            <marker date="1487669693000" expanded="true" signature="1986:1994" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="1996:2004" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2006:2014" ph="1.000000" />
+            <marker date="1487669693000" expanded="true" signature="2016:2175" ph="RIGHT.R: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="2076:2175" ph="data: [9 items]" />
+            <marker date="1487669693000" expanded="true" signature="2083:2091" ph="0.999858" />
+            <marker date="1487669693000" expanded="true" signature="2093:2102" ph="-0.000106" />
+            <marker date="1487669693000" expanded="true" signature="2104:2113" ph="-0.016842" />
+            <marker date="1487669693000" expanded="true" signature="2115:2123" ph="0.000062" />
+            <marker date="1487669693000" expanded="true" signature="2125:2133" ph="0.999997" />
+            <marker date="1487669693000" expanded="true" signature="2135:2144" ph="-0.002608" />
+            <marker date="1487669693000" expanded="true" signature="2146:2154" ph="0.016842" />
+            <marker date="1487669693000" expanded="true" signature="2156:2164" ph="0.002607" />
+            <marker date="1487669693000" expanded="true" signature="2166:2174" ph="0.999855" />
+            <marker date="1487669693000" expanded="true" signature="2176:2372" ph="RIGHT.P: &lt;4 keys&gt;" />
+            <marker date="1487669693000" expanded="true" signature="2236:2372" ph="data: [12 items]" />
+            <marker date="1487669693000" expanded="true" signature="2243:2253" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="2255:2263" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2265:2275" ph="387.789700" />
+            <marker date="1487669693000" expanded="true" signature="2277:2287" ph="-51.817399" />
+            <marker date="1487669693000" expanded="true" signature="2289:2297" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2299:2309" ph="471.547836" />
+            <marker date="1487669693000" expanded="true" signature="2311:2321" ph="241.582283" />
+            <marker date="1487669693000" expanded="true" signature="2323:2331" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2333:2341" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2343:2351" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2353:2361" ph="1.000000" />
+            <marker date="1487669693000" expanded="true" signature="2363:2371" ph="0.000000" />
+            <marker date="1487669693000" expanded="true" signature="2650:2654" ph="1200" />
+            <marker date="1487669693000" expanded="true" signature="2757:2760" ph="1.2" />
+            <marker date="1487669693000" expanded="true" signature="3147:3149" ph="20" />
+            <marker date="1487669693000" expanded="true" signature="3415:3418" ph="0.7" />
+            <marker date="1487669693000" expanded="true" signature="3476:3479" ph="0.9" />
+            <marker date="1487669693000" expanded="true" signature="3480:3498" ph="Viewer.PointSize:2" />
+            <marker date="1487669693000" expanded="true" signature="3518:3521" ph="0.7" />
+            <marker date="1487669693000" expanded="true" signature="3594:3597" ph="-12" />
+            <marker date="1487669693000" expanded="true" signature="3623:3625" ph="-8" />
+            <marker date="1487669693000" expanded="true" signature="3651:3654" ph="500" />
+            <marker date="1487669693000" expanded="true" signature="4606:4608" ph="-5" />
+            <marker date="1487669693000" expanded="true" signature="5175:5177" ph="10" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/orb_slam2/src/ros_stereo.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="218" column="21" lean-forward="true" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="27" />
+          <folding>
+            <marker date="1484083363666" expanded="false" signature="0:826" ph="/**...*/" />
+            <marker date="1484083363666" expanded="false" signature="1325:2023" ph="{...}" />
+            <marker date="1484083363666" expanded="true" signature="2058:6019" ph="{...}" />
+            <marker date="1484083363666" expanded="true" signature="6340:6467" ph="{...}" />
+            <marker date="1484083363666" expanded="true" signature="6616:7938" ph="{...}" />
+            <marker date="1484083363666" expanded="true" signature="8084:8280" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1484035740548" expanded="false" signature="0:826" ph="/**...*/" />
+            <marker date="1484035740548" expanded="false" signature="839:978" ph="..." />
+            <marker date="1484035740548" expanded="true" signature="1002:18894" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="1247:4067" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="4169:5197" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="5294:6313" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="6390:7416" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="7482:7518" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="7551:9680" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="9789:10490" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="10615:11119" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="11221:11283" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="11578:12125" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="12340:12649" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="12692:12775" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="12819:12904" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="12927:12992" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="13018:13413" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="13470:15620" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="15686:16755" ph="{...}" />
+            <marker date="1484035740548" expanded="false" signature="16814:18891" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/ROS/orb_slam2/.cproject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="207" column="27" lean-forward="true" selection-start-line="207" selection-start-column="27" selection-end-line="207" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+            <element signature="e#2078#2125#0" expanded="false" />
+            <element signature="e#2192#2315#0" expanded="false" />
+            <element signature="e#2316#2729#1" expanded="false" />
+            <element signature="e#2510#2573#0" expanded="false" />
+            <element signature="e#2577#2727#0" expanded="false" />
+            <element signature="e#2733#3650#1" expanded="false" />
+            <element signature="e#2972#3266#0" expanded="false" />
+            <element signature="e#3270#3524#0" expanded="false" />
+            <element signature="e#3654#4605#1" expanded="false" />
+            <element signature="e#3905#4204#0" expanded="false" />
+            <element signature="e#4208#4462#0" expanded="false" />
+            <element signature="e#4608#5335#1" expanded="false" />
+            <element signature="e#4844#5039#0" expanded="false" />
+            <element signature="e#5043#5198#0" expanded="false" />
+            <element signature="e#5339#6084#1" expanded="false" />
+            <element signature="e#5587#5784#0" expanded="false" />
+            <element signature="e#5788#5943#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Optimizer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+          <folding>
+            <marker date="1485005043451" expanded="false" signature="0:826" ph="/**...*/" />
+            <marker date="1485005043451" expanded="false" signature="837:1335" ph="..." />
+            <marker date="1485005043451" expanded="true" signature="1357:48544" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="1495:1682" ph="{...}" />
+            <marker date="1485005043451" expanded="true" signature="1900:10956" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="11028:18730" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="18814:29687" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="30080:38953" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="39105:45487" ph="{...}" />
+            <marker date="1485005043451" expanded="false" signature="45564:48540" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tracking.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="995" column="27" lean-forward="false" selection-start-line="995" selection-start-column="19" selection-end-line="995" selection-end-column="35" />
+          <folding>
+            <marker date="1487780090092" expanded="false" signature="0:826" ph="/**...*/" />
+            <marker date="1487780090092" expanded="false" signature="838:1119" ph="..." />
+            <marker date="1487780090092" expanded="true" signature="1164:53264" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="1641:5865" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="5925:5960" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="6019:6054" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="6098:6123" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="6157:6182" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="6220:6257" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="6373:7311" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="7412:8119" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="8203:8924" ph="{...}" />
+            <marker date="1487780090092" expanded="true" signature="8949:19049" ph="{...}" />
+            <marker date="1487780090092" expanded="true" signature="19089:21253" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="21296:23550" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="23595:26352" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="26396:26688" ph="{...}" />
+            <marker date="1487780090092" expanded="true" signature="26730:28040" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="28075:29728" ph="{...}" />
+            <marker date="1487780090092" expanded="true" signature="29768:31821" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="31854:33213" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="33248:36315" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="36352:38744" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="38781:40251" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="40285:40442" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="40479:41233" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="41270:42195" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="42235:45697" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="45731:50928" ph="{...}" />
+            <marker date="1487780090092" expanded="true" signature="50961:51278" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="51303:52225" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="52290:53175" ph="{...}" />
+            <marker date="1487780090092" expanded="false" signature="53229:53259" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

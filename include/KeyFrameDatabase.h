@@ -32,6 +32,19 @@
 #include<mutex>
 
 
+#include <boost/serialization/serialization.hpp>
+#include <boost/archive/binary_oarchive.hpp>
+#include <boost/archive/binary_iarchive.hpp>
+#include <boost/serialization/list.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/serialization/split_member.hpp>
+
+
+
+
+
+
+
 namespace ORB_SLAM2
 {
 
@@ -44,6 +57,13 @@ class KeyFrameDatabase
 public:
 
     KeyFrameDatabase(const ORBVocabulary &voc);
+
+
+
+
+    KeyFrameDatabase() {;}
+
+
 
    void add(KeyFrame* pKF);
 
@@ -67,6 +87,26 @@ protected:
 
   // Mutex
   std::mutex mMutex;
+
+
+friend class boost::serialization::access;
+
+template<class Archive>
+    void serialize(Archive & ar, const unsigned int version)
+	{
+		boost::serialization::split_member(ar, *this, version);
+	}
+		
+template<class Archive>
+	void save(Archive & ar, const unsigned int version) const;
+	
+
+template<class Archive>
+	void load(Archive & ar, const unsigned int version);
+
+
+
+
 };
 
 } //namespace ORB_SLAM

@@ -25,6 +25,20 @@
 #include "KeyFrame.h"
 #include <set>
 
+
+
+#include <boost/serialization/serialization.hpp>
+#include <boost/archive/binary_oarchive.hpp>
+#include <boost/archive/binary_iarchive.hpp>
+#include <boost/serialization/list.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/serialization/split_member.hpp>
+
+
+
+
+
+
 #include <mutex>
 
 
@@ -60,10 +74,15 @@ public:
 
     vector<KeyFrame*> mvpKeyFrameOrigins;
 
-    std::mutex mMutexMapUpdate;
+   mutable std::mutex mMutexMapUpdate;;
 
     // This avoid that two points are created simultaneously in separate threads (id conflict)
-    std::mutex mMutexPointCreation;
+
+
+   mutable std::mutex mMutexPointCreation;
+
+
+
 
 protected:
     std::set<MapPoint*> mspMapPoints;
@@ -74,6 +93,26 @@ protected:
     long unsigned int mnMaxKFid;
 
     std::mutex mMutexMap;
+
+
+friend class boost::serialization::access;
+
+    template<class Archive>
+    void serialize(Archive & ar, const unsigned int version)
+	{
+		boost::serialization::split_member(ar, *this, version);
+	}
+		
+	template<class Archive>
+	void save(Archive & ar, const unsigned int version) const;
+	
+
+	template<class Archive>
+	void load(Archive & ar, const unsigned int version);
+	
+	
+
+
 };
 
 } //namespace ORB_SLAM

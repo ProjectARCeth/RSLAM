@@ -678,12 +678,22 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
 
             while(!lpKFtoCheck.empty())
             {
+
                 KeyFrame* pKF = lpKFtoCheck.front();
+
+                if (!pKF)
+                    continue;
+
+
                 const set<KeyFrame*> sChilds = pKF->GetChilds();
                 cv::Mat Twc = pKF->GetPoseInverse();
                 for(set<KeyFrame*>::const_iterator sit=sChilds.begin();sit!=sChilds.end();sit++)
                 {
                     KeyFrame* pChild = *sit;
+
+                   if (!pChild)
+                        continue;
+
                     if(pChild->mnBAGlobalForKF!=nLoopKF)
                     {
                         cv::Mat Tchildc = pChild->GetPose()*Twc;
@@ -706,6 +716,11 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
             {
                 MapPoint* pMP = vpMPs[i];
 
+
+                if(!pMP)
+                    continue;
+
+
                 if(pMP->isBad())
                     continue;
 
@@ -719,8 +734,36 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
                     // Update according to the correction of its reference keyframe
                     KeyFrame* pRefKF = pMP->GetReferenceKeyFrame();
 
+
+
+                   if(!pRefKF)
+                        continue;
+
+
+
+
                     if(pRefKF->mnBAGlobalForKF!=nLoopKF)
                         continue;
+
+
+
+
+
+                   cout << "RunGlobalBundleAdjustment CP " << pRefKF->mnId 
+                        << " " << pRefKF->mTcwBefGBA.rows 
+                        << " " << pRefKF->mTcwBefGBA.cols << endl;
+                    fflush(stdout);
+
+                    /* TODO : Stop-Gap for Loop Closure. Size coming as Zero! */
+                    if (!pRefKF->mTcwBefGBA.rows || !pRefKF->mTcwBefGBA.cols)
+                        continue;
+
+
+
+
+
+
+
 
                     // Map to non-corrected camera
                     cv::Mat Rcw = pRefKF->mTcwBefGBA.rowRange(0,3).colRange(0,3);

@@ -43,8 +43,8 @@ using namespace std;
 namespace ORB_SLAM2
 {
 
-Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor):
-    mState(NO_IMAGES_YET), mSensor(sensor), mbOnlyTracking(false), mbVO(false), mpORBVocabulary(pVoc),
+Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor, const bool bReuse):
+    mState(NO_IMAGES_YET), mSensor(sensor), mbOnlyTracking(bReuse), mbVO(false), mpORBVocabulary(pVoc),
     mpKeyFrameDB(pKFDB), mpInitializer(static_cast<Initializer*>(NULL)), mpSystem(pSys),
     mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpMap(pMap), mnLastRelocFrameId(0)
 {
@@ -81,6 +81,15 @@ Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer,
     float fps = fSettings["Camera.fps"];
     if(fps==0)
         fps=30;
+
+
+    is_preloaded = bReuse;
+	if (is_preloaded)
+    {
+		mState = LOST;
+    }
+
+
 
     // Max/Min Frames to insert keyframes and to check relocalisation
     mMinFrames = 0;
@@ -138,6 +147,9 @@ Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer,
     cout << "- Scale Factor: " << fScaleFactor << endl;
     cout << "- Initial Fast Threshold: " << fIniThFAST << endl;
     cout << "- Minimum Fast Threshold: " << fMinThFAST << endl;
+
+
+   cout << "- Reuse Map ?: " << is_preloaded << endl;
 
     if(sensor==System::STEREO || sensor==System::RGBD)
     {
@@ -258,7 +270,39 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const d
 
     Track();
 
-    return mCurrentFrame.mTcw.clone();
+
+
+if(mState==OK && !mCurrentFrame.mTcw.empty() && mCurrentFrame.mpReferenceKF)    
+    {
+
+        vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
+        sort(vpKFs.begin(),vpKFs.end(),KeyFrame::lId);
+
+        // Transform all keyframes so that the first keyframe is at the origin.
+        // After a loop closure the first keyframe might not be at the origin.
+
+        cv::Mat Two = vpKFs[0]->GetPoseInverse();
+
+        ORB_SLAM2::KeyFrame* pKF = mpReferenceKF;
+
+        cv::Mat Trw = cv::Mat::eye(4,4,CV_32F);
+        while(pKF->isBad())
+        {
+          //  cout << "bad parent" << endl;
+            Trw = Trw*pKF->mTcp;
+            pKF = pKF->GetParent();
+        }
+        Trw = Trw*pKF->GetPose()*Two; 
+        cv::Mat Tcr = mlRelativeFramePoses.back();
+        cv::Mat Tcw = Tcr*Trw;
+        return Tcw.clone();
+    }
+    else 
+        return mCurrentFrame.mTcw.clone();
+
+
+
+
 }
 
 
@@ -293,6 +337,12 @@ cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im, const double &timestamp)
 
 void Tracking::Track()
 {
+	if((counter<50)&&is_preloaded) {
+	mState=LOST;
+        counter++;
+        }
+
+
     if(mState==NO_IMAGES_YET)
     {
         mState = NOT_INITIALIZED;
@@ -305,6 +355,18 @@ void Tracking::Track()
 
     if(mState==NOT_INITIALIZED)
     {
+
+
+
+        if (is_preloaded)
+        {
+            mState = LOST;
+            return;
+        }
+
+
+
+
         if(mSensor==System::STEREO || mSensor==System::RGBD)
             StereoInitialization();
         else
@@ -353,6 +415,7 @@ void Tracking::Track()
                     break;
 
                 case DEAD_RECKONING:
+
                     bOK = TrackWithMotionModel();
                     break;
 
@@ -555,7 +618,7 @@ void Tracking::Track()
     }
 
     // Store frame pose information to retrieve the complete camera trajectory afterwards.
-    if(!mCurrentFrame.mTcw.empty())
+    if(!mCurrentFrame.mTcw.empty() && mCurrentFrame.mpReferenceKF)
     {
         cv::Mat Tcr = mCurrentFrame.mTcw*mCurrentFrame.mpReferenceKF->GetPoseInverse();
         mlRelativeFramePoses.push_back(Tcr);
@@ -572,10 +635,21 @@ void Tracking::Track()
         mlbLost.push_back(mState==LOST);
     }
 
+
     mpSystem->PublishInertialTransform(ros::Time(mCurrentFrame.mTimeStamp), "ORB_map", "world", "ORB_initial");
     mpSystem->PublishPoseTransform(ros::Time(mCurrentFrame.mTimeStamp), mCurrentFrame.mTcw, "world", "ORB_odometry");
     mpSystem->PublishOdometry();
 }
+
+
+
+
+#if 0
+cv::Mat Tracking::getTransformData()
+{   
+        return mCurrentFrame.mTcw*mCurrentFrame.mpReferenceKF->GetPoseInverse();
+}
+#endif
 
 void Tracking::StereoInitialization()
 {
