@@ -96,7 +96,7 @@ Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer,
     mMaxFrames = fSettings["Tracking.MaxNumberFramesBeforeKF"];
     if(mMaxFrames < 1)
     {
-        cout << "invalid Parameter Tracking.MaxNumberFramesBeforeKF specified, setting to fps: " << fps << endl;
+        // cout << "invalid Parameter Tracking.MaxNumberFramesBeforeKF specified, setting to fps: " << fps << endl;
         mMaxFrames = fps;
     }
 
@@ -690,7 +690,7 @@ void Tracking::StereoInitialization()
             }
         }
 
-        cout << "RSLAM: New map created with " << mpMap->MapPointsInMap() << " points" << endl;
+        // cout << "RSLAM: New map created with " << mpMap->MapPointsInMap() << " points" << endl;
 
         mpLocalMapper->InsertKeyFrame(pKFini);
 
