@@ -80,7 +80,7 @@ template<class Archive>
 
         int nItems;
         ar & nItems;
-        cout << "{INFO}mspMapPoints size = " << nItems << endl;
+        // cout << "{INFO}mspMapPoints size = " << nItems << endl;
         
         for (int i = 0; i < nItems; ++i) {
             
@@ -90,7 +90,7 @@ template<class Archive>
         }
         
         ar & nItems;
-        cout << "{INFO}mspKeyFrames size = " << nItems << endl;
+        // cout << "{INFO}mspKeyFrames size = " << nItems << endl;
 
         for (int i = 0; i < nItems; ++i) {
 
@@ -101,7 +101,7 @@ template<class Archive>
           
 
         ar & nItems;
-        cout << "{INFO}mvpKeyFrameOrigins size = " << nItems << endl;
+        // cout << "{INFO}mvpKeyFrameOrigins size = " << nItems << endl;
 
         for (int i = 0; i < nItems; ++i) {             
 

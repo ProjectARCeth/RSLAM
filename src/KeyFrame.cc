@@ -1098,7 +1098,7 @@ void KeyFrame::UpdateConnections()
     if(nmax<mWeakTrackingThreshold)
     {
         mbWeakTracking = true;
-        cout << "Weak tracking flag set for KF " << mnId << endl;
+        // cout << "Weak tracking flag set for KF " << mnId << endl;
     }
 
 

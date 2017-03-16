@@ -71,9 +71,6 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "RGBD");
     ros::start();
 
-
-
-
     bool bReuseMap = false;
 
     if(argc != 5)
@@ -89,12 +86,6 @@ int main(int argc, char **argv)
 
   // Create SLAM system. It initializes all system threads and gets ready to process frames.
     ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true, bReuseMap);
-
-
-
-
-
-
 
     ImageGrabber igb(&SLAM);
 
@@ -161,11 +152,11 @@ int main(int argc, char **argv)
 
     if(useExtOdo || useExtInit)
     {
-        cout << "extended synchronizer initialized " << endl;
+        // cout << "extended synchronizer initialized " << endl;
         sync_images.~Synchronizer();
     } else
     {
-        cout << "short synchronizer initialized " << endl;
+        // cout << "short synchronizer initialized " << endl;
         sync_odometry.~Synchronizer();
     }
 
@@ -173,20 +164,10 @@ int main(int argc, char **argv)
     SLAM.SetPublisherHandle(pubHandle);
 
 
-
-
-
     ros::Publisher PosPub = nh.advertise<geometry_msgs::PoseStamped>("ORB_SLAM/pose", 5);
     igb.pPosPub = &(PosPub);
 
-
-
-
-
-
-
-
-    cout << "start spinning" << endl;
+    // cout << "start spinning" << endl;
 
     ros::spin();
 
@@ -194,13 +175,12 @@ int main(int argc, char **argv)
     SLAM.Shutdown();
 
     // Save camera trajectory
-    SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_TUM_Format.txt");
-    SLAM.SaveTrajectoryTUM("FrameTrajectory_TUM_Format.txt");
-    SLAM.SaveTrajectoryKITTI("FrameTrajectory_KITTI_Format.txt");
+    // SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_TUM_Format.txt");
+    // SLAM.SaveTrajectoryTUM("FrameTrajectory_TUM_Format.txt");
+    // SLAM.SaveTrajectoryKITTI("FrameTrajectory_KITTI_Format.txt");
 
 
     SLAM.SaveMap("Slam_latest_Map.bin");
-
 
 
     ros::shutdown();
@@ -263,16 +243,7 @@ void ImageGrabber::GrabStereo(const sensor_msgs::ImageConstPtr& msgLeft,
     } else {
         cv::Mat Tcw=mpSLAM->TrackStereo(cv_ptrLeft->image, cv_ptrRight->image, cv_ptrLeft->header.stamp.toSec());
     PublishPose(Tcw);
-
-
     }
-    
-    
-
-
-
-
-
 }
 
 void ImageGrabber::PoseCallback(const nav_msgs::OdometryConstPtr& msgOdometry, const geometry_msgs::PoseWithCovarianceStampedConstPtr& msgPose)
