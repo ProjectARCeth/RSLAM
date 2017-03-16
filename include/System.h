@@ -85,7 +85,7 @@ public:
 
 
     // Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads.
-    System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor, const bool bUseViewer = true, const bool reuse= false);
+    System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor, const bool bUseViewer = true, const bool reuse= false, const string loadName="Slam_latest_Map");
 
     // Proccess the given stereo frame. Images must be synchronized and rectified.
     // Input images: RGB (CV_8UC3) or grayscale (CV_8U). RGB is converted to grayscale.
@@ -120,7 +120,7 @@ public:
 
     // Save / Load the current map for Mono Execution
     void SaveMap(const string &filename);
-    void LoadMap(const string &filename);
+    void LoadMap(const string &filename);              
 
     // Get map with tracked frames and points.
     // Call first Shutdown()
@@ -170,9 +170,6 @@ public:
                         const geometry_msgs::PoseWithCovarianceStampedConstPtr& msgPose);
 
 
-    // TODO: Save/Load functions
-    // SaveMap(const string &filename);
-    // LoadMap(const string &filename);
 
 private:
 

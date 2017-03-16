@@ -34,32 +34,28 @@ bool has_suffix(const std::string &str, const std::string &suffix) {
   return (index != std::string::npos);
 }
 
-
-
-
-
 namespace ORB_SLAM2
 {
 
 System::System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor,
-               const bool bUseViewer, const bool bReuse):mSensor(sensor),mbReset(false),mbActivateLocalizationMode(bReuse),
+               const bool bUseViewer, const bool bReuse, const string loadName):mSensor(sensor),mbReset(false),mbActivateLocalizationMode(bReuse),
         mbDeactivateLocalizationMode(false)
 {
     // Output welcome message
-    cout << endl <<
-    "ORB-SLAM2 Copyright (C) 2014-2016 Raul Mur-Artal, University of Zaragoza." << endl <<
-    "This program comes with ABSOLUTELY NO WARRANTY;" << endl  <<
-    "This is free software, and you are welcome to redistribute it" << endl <<
-    "under certain conditions. See LICENSE.txt." << endl << endl;
+    // cout << endl <<
+    // "ORB-SLAM2 Copyright (C) 2014-2016 Raul Mur-Artal, University of Zaragoza." << endl <<
+    // "This program comes with ABSOLUTELY NO WARRANTY;" << endl  <<
+    // "This is free software, and you are welcome to redistribute it" << endl <<
+    // "under certain conditions. See LICENSE.txt." << endl << endl;
 
-    cout << "Input sensor was set to: ";
+    // cout << "Input sensor was set to: ";
 
-    if(mSensor==MONOCULAR)
-        cout << "Monocular" << endl;
-    else if(mSensor==STEREO)
-        cout << "Stereo" << endl;
-    else if(mSensor==RGBD)
-        cout << "RGB-D" << endl;
+    // if(mSensor==MONOCULAR)
+    //     cout << "Monocular" << endl;
+    // else if(mSensor==STEREO)
+    //     cout << "Stereo" << endl;
+    // else if(mSensor==RGBD)
+    //     cout << "RGB-D" << endl;
 
     //Check settings file
     cv::FileStorage fsSettings(strSettingsFile.c_str(), cv::FileStorage::READ);
@@ -71,7 +67,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
 
     //Load ORB Vocabulary
-    cout << endl << "Loading ORB Vocabulary. This could take a while..." << endl;
+    // cout << endl << "Loading ORB Vocabulary. This could take a while..." << endl;
 
     mpVocabulary = new ORBVocabulary();
     bool bVocLoad = mpVocabulary->loadFromTextFile(strVocFile);
@@ -81,14 +77,12 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
         cerr << "Falied to open at: " << strVocFile << endl;
         exit(-1);
     }
-    cout << "Vocabulary loaded!" << endl << endl;
+    // cout << "Vocabulary loaded!" << endl << endl;
 
     //Create KeyFrame Database
     mpKeyFrameDatabase = new KeyFrameDatabase(*mpVocabulary);
 
     //Create the Map
-
-
     if (!bReuse)
     {
         mpMap = new Map();
@@ -96,7 +90,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
 	if (bReuse)
 	{
-		LoadMap("Slam_Map.bin");
+		LoadMap("Slam_latest_Map.bin");
         
         //mpKeyFrameDatabase->set_vocab(mpVocabulary);
        
@@ -128,11 +122,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
        
 
 	}
-	cout << endl << mpMap <<" : is the created map address" << endl;
-
-
-
-
+	// cout << endl << mspMap <<" : is the created map address" << endl;
 
     //Create Drawers. These are used by the Viewer
     mpFrameDrawer = new FrameDrawer(mpMap, bReuse);
@@ -511,12 +501,6 @@ void System::SaveMap(const string &filename)
 
 }
 
-
-
-
-
-
-
 void System::SaveTrajectoryTUM(const string &filename)
 {
     cout << endl << "Saving camera trajectory to " << filename << " ..." << endl;
@@ -528,7 +512,7 @@ void System::SaveTrajectoryTUM(const string &filename)
     // After a loop closure the first keyframe might not be at the origin.
     cv::Mat Two = vpKFs[0]->GetPoseInverse();
 
-    cout << "origin was found at " << Two << endl;
+    // cout << "origin was found at " << Two << endl;
 
     ofstream f;
     f.open(filename.c_str());
@@ -658,7 +642,7 @@ void System::SaveTrajectoryKITTI(const string &filename)
              Rwc.at<float>(2,0) << " " << Rwc.at<float>(2,1)  << " " << Rwc.at<float>(2,2) << " "  << twc.at<float>(2) << endl;
     }
     f.close();
-    cout << endl << "trajectory saved!" << endl;
+    // cout << endl << "trajectory saved!" << endl;
 }
 
 } //namespace ORB_SLAM

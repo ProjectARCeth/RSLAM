@@ -73,7 +73,7 @@ int main(int argc, char **argv)
 
     bool bReuseMap = false;
 
-    if(argc != 5)
+    if(argc != 7)        //---------------------------------------------------------------------------------------------------------
     {
         cerr << endl << "Usage: rosrun ORB_SLAM2 Stereo path_to_vocabulary path_to_settings do_rectify" << endl;
         ros::shutdown();
@@ -85,7 +85,7 @@ int main(int argc, char **argv)
 	}
 
   // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true, bReuseMap);
+    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true, bReuseMap, argv[6]); //------------------------------
 
     ImageGrabber igb(&SLAM);
 
@@ -180,8 +180,8 @@ int main(int argc, char **argv)
     // SLAM.SaveTrajectoryKITTI("FrameTrajectory_KITTI_Format.txt");
 
 
-    SLAM.SaveMap("Slam_latest_Map.bin");
-
+    string bin=".bin";
+    SLAM.SaveMap(argv[5]+bin);      //---------------------------------------------------------------------
 
     ros::shutdown();
 
