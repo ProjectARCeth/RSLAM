@@ -90,7 +90,8 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
 	if (bReuse)
 	{
-		LoadMap("Slam_latest_Map.bin");
+		string bin=".bin";
+		LoadMap(loadName+bin);
         
         //mpKeyFrameDatabase->set_vocab(mpVocabulary);
        
@@ -143,7 +144,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
     //Initialize the Viewer thread and launch
     mpViewer = new Viewer(this, mpFrameDrawer,mpMapDrawer,mpTracker,strSettingsFile, bReuse);
-    if(bUseViewer)
+    if(false)
         mptViewer = new thread(&Viewer::Run, mpViewer);
 
     mpTracker->SetViewer(mpViewer);

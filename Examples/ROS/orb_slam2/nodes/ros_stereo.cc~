@@ -84,8 +84,16 @@ int main(int argc, char **argv)
 		bReuseMap = true;
 	}
 
+	
+    bUseViewer = false;
+
+	if (!strcmp(argv[3], "true"))
+    {
+		bUseViewer = true;
+	}
+
   // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO,true, bReuseMap, argv[6]); //------------------------------
+    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::STEREO, bUseViewer, bReuseMap, argv[6]); //------------------------------
 
     ImageGrabber igb(&SLAM);
 
