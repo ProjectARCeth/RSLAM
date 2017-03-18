@@ -573,7 +573,7 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
             }
             if (mapp_found == false)
             {
-                cout << " map point [" << id <<"] not found in KF " << mnId << endl;
+                // cout << " map point [" << id <<"] not found in KF " << mnId << endl;
                 mvpMapPoints[j] = static_cast<MapPoint*>(NULL);
             }
 
@@ -610,7 +610,7 @@ void KeyFrame::SetSpanningTree(std::vector<KeyFrame*> vpKeyFrames)
         }
         if (kf_found == false)
         {
-            cout << endl << "Parent KF [" << mparent_KfId_map.id <<"] not found for KF " << mnId << endl;
+            // cout << endl << "Parent KF [" << mparent_KfId_map.id <<"] not found for KF " << mnId << endl;
             //mpParent = new KeyFrame();
             //mpParent->mbBad = true;     
             mpParent = static_cast<KeyFrame*>(NULL);             
@@ -650,8 +650,8 @@ void KeyFrame::SetSpanningTree(std::vector<KeyFrame*> vpKeyFrames)
                     break;
                 }
             }
-            if (kf_found == false)
-                cout << endl << "Child [" << id <<"] not found for KF " << mnId << endl;
+            if (kf_found == false){}
+                // cout << endl << "Child [" << id <<"] not found for KF " << mnId << endl;
 
         }
 
@@ -692,8 +692,8 @@ void KeyFrame::SetSpanningTree(std::vector<KeyFrame*> vpKeyFrames)
                     break;
                 }
             }
-            if (kf_found == false)
-                cout << endl << "Loop Edge [" << id <<"] not found for KF " << mnId << endl;
+            if (kf_found == false){}
+                // cout << endl << "Loop Edge [" << id <<"] not found for KF " << mnId << endl;
 
         }
 

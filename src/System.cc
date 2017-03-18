@@ -361,7 +361,7 @@ void System::PublishPoseTransform(ros::Time t, const cv::Mat &T21, std::string f
 {
     if(T21.empty())
     {
-        cout << "Non-valid transform for transformation, tf message aborted" << endl;
+        //cout << "Non-valid transform for transformation, tf message aborted" << endl;
         return;
     }
 

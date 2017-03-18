@@ -189,7 +189,7 @@ int main(int argc, char **argv)
 
 
     string bin=".bin";
-    SLAM.SaveMap(argv[5]+bin);      //---------------------------------------------------------------------
+    if(!bReuseMap) SLAM.SaveMap(argv[5]+bin);      //----------------------------------------11
 
     ros::shutdown();
 
