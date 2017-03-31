@@ -253,6 +253,8 @@ protected:
 
     bool is_preloaded;
 
+    bool found_init_pose;
+
 
 };
 
