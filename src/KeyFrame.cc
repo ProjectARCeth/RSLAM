@@ -540,7 +540,7 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
     // With nid, Search the KetFrame List and populate mvpMapPoints
     long unsigned int id;
     bool is_valid = false;
-    bool mapp_found = false;
+    // bool mapp_found = false;
 
     int j = 0, ctr = 0;
     for (std::map<long unsigned int,id_map>::iterator it = mmMapPoints_nId.begin(); 
@@ -557,28 +557,54 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
         else
         {
             id = it->second.id;  
-            //cout << "pushing a map point to mvp mappoint" << endl;
-           mapp_found = false;
-            for(std::vector<MapPoint*>::iterator mit=spMapPoints.begin(); mit !=spMapPoints.end(); mit++)
-            {
-                MapPoint* pMp = *mit;
-               
-                if(id == pMp->mnId)
-                {    
-                    ctr ++;
-                    mvpMapPoints[j] = pMp;
-                    mapp_found = true;
+            int size = spMapPoints.size();
+            int iterator = size/2;
+            if(id == spMapPoints[iterator]->mnId){
+                ctr++;
+                mvpMapPoints[j] = spMapPoints[iterator];
+                break;
+            }
+            else if(id < spMapPoints[iterator]->mnId){
+                while(id < spMapPoints[iterator]->mnId && iterator>=size/10) iterator -= size/10;
+                while(id > spMapPoints[iterator]->mnId && iterator<size-size/100-1) iterator += size/100;
+                while(id < spMapPoints[iterator]->mnId && iterator>=size/500) iterator -= size/500; 
+                while(id > spMapPoints[iterator]->mnId && iterator>size-1-1) iterator += 1;
+                if(id == spMapPoints[iterator]->mnId){
+                    ctr++;
+                    mvpMapPoints[j] = spMapPoints[iterator];
                     break;
                 }
             }
-            if (mapp_found == false)
-            {
-                // cout << " map point [" << id <<"] not found in KF " << mnId << endl;
-                mvpMapPoints[j] = static_cast<MapPoint*>(NULL);
+            else if(id > spMapPoints[iterator]->mnId){
+                while(id > spMapPoints[iterator]->mnId && iterator<size-size/10-1) iterator += size/10;
+                while(id < spMapPoints[iterator]->mnId && iterator>size/100) iterator -= size/100;
+                while(id > spMapPoints[iterator]->mnId && iterator<size-size/500-1) iterator += size/500;
+                while(id < spMapPoints[iterator]->mnId && iterator>=1) iterator -= 1;
+                if(id == spMapPoints[iterator]->mnId){
+                    ctr++;
+                    mvpMapPoints[j] = spMapPoints[iterator];
+                    break;
+                }
             }
-
+            // mapp_found = false;
+            // for(std::vector<MapPoint*>::iterator mit=spMapPoints.begin(); mit !=spMapPoints.end(); mit++)
+            // {
+            //     MapPoint* pMp = *mit;
+               
+            //     if(id == pMp->mnId)
+            //     {    
+            //         ctr ++;
+            //         mvpMapPoints[j] = pMp;
+            //         mapp_found = true;
+            //         break;
+            //     }
+            // }
+            // if (mapp_found == false)
+            // {
+            //     // cout << " map point [" << id <<"] not found in KF " << mnId << endl;
+            //     mvpMapPoints[j] = static_cast<MapPoint*>(NULL);
+            // }
         }
-
    }
 }
 

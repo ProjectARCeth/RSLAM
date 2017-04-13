@@ -88,7 +88,21 @@ template<class Archive>
             ar & *pMapPoint;
             mspMapPoints.insert(pMapPoint);
         }
-        
+        bool sorted = false;
+        std::vector<MapPoint*> point_vector(mspMapPoints.begin(),mspMapPoints.end());
+        while(sorted){
+            sorted = true;
+            for(int i = 0; i < nItems; ++i){
+                if(point_vector[i]->mnId > point_vector[i+1]->mnId){
+                    MapPoint* temp = point_vector[i];
+                    point_vector[i+1] = point_vector[i];
+                    point_vector[i+1] = temp;
+                    sorted = false;
+                }
+            }
+        }
+        mspMapPoints = std::set<MapPoint*>(point_vector.begin(),point_vector.end());
+
         ar & nItems;
         // cout << "{INFO}mspKeyFrames size = " << nItems << endl;
 
