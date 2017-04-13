@@ -89,7 +89,7 @@ Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer,
 		mState = LOST;
     }
 
-
+    found_init_pose = false;
 
     // Max/Min Frames to insert keyframes and to check relocalisation
     mMinFrames = 0;
@@ -336,10 +336,13 @@ cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im, const double &timestamp)
 
 void Tracking::Track()
 {
-	if((counter<50)&&is_preloaded) {
-	mState=LOST;
-        counter++;
-        }
+	if((counter<500)&&is_preloaded) {
+	   mState=LOST;
+       counter++;
+    }
+    if(found_init_pose && is_preloaded){
+        mState = OK;
+    }
 
 
     if(mState==NO_IMAGES_YET)
@@ -410,6 +413,7 @@ void Tracking::Track()
 
                 case LOST:
                     bOK = Relocalization();
+                    found_init_pose = bOK;
                     cout << "Relocalizing..." << bOK << endl;
                     break;
 
@@ -433,6 +437,7 @@ void Tracking::Track()
         {
             // Localization Mode: Local Mapping is deactivated
 
+<<<<<<< HEAD
             if(mState==LOST || mState == DEAD_RECKONING)
             {
                 bOK = Relocalization();
@@ -440,6 +445,17 @@ void Tracking::Track()
                 {
                     mState = LOST;
                 }
+=======
+            // if(mState==LOST || mState == DEAD_RECKONING)
+            if(mState==LOST)
+            {
+                bOK = Relocalization();
+                found_init_pose = bOK;
+                // if (!bOK)
+                // {
+                //     mState = LOST;
+                // }
+>>>>>>> 894bf96d37eddc24abcf4bbeb08d08c60f8a7126
             }
             else
             {
