@@ -436,16 +436,6 @@ void Tracking::Track()
         else
         {
             // Localization Mode: Local Mapping is deactivated
-
-<<<<<<< HEAD
-            if(mState==LOST || mState == DEAD_RECKONING)
-            {
-                bOK = Relocalization();
-                if(!bOK)
-                {
-                    mState = LOST;
-                }
-=======
             // if(mState==LOST || mState == DEAD_RECKONING)
             if(mState==LOST)
             {
@@ -454,8 +444,7 @@ void Tracking::Track()
                 // if (!bOK)
                 // {
                 //     mState = LOST;
-                // }
->>>>>>> 894bf96d37eddc24abcf4bbeb08d08c60f8a7126
+                // }s
             }
             else
             {
