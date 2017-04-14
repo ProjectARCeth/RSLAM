@@ -176,7 +176,6 @@ template<class Archive>
                 ar & is_id;
                 t_nId =  (**it).mnId;
                 //cout << "[" << t_nId <<"]";
-
                 ar & t_nId;
 
             }
@@ -540,9 +539,9 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
     // With nid, Search the KetFrame List and populate mvpMapPoints
     long unsigned int id;
     bool is_valid = false;
-    bool mapp_found = false;
+    //bool mapp_found = false;
 
-    int j = 0, ctr = 0;
+    int j = 0;
     for (std::map<long unsigned int,id_map>::iterator it = mmMapPoints_nId.begin(); 
             it != mmMapPoints_nId.end(); 
             j++,++it) 
@@ -558,8 +557,12 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
         {
             id = it->second.id;  
             //cout << "pushing a map point to mvp mappoint" << endl;
-           mapp_found = false;
-            for(std::vector<MapPoint*>::iterator mit=spMapPoints.begin(); mit !=spMapPoints.end(); mit++)
+                  
+
+            mvpMapPoints[j] = spMapPoints[id];
+
+
+            /*for(std::vector<MapPoint*>::iterator mit=spMapPoints.begin(); mit !=spMapPoints.end(); mit++)
             {
                 MapPoint* pMp = *mit;
                
@@ -575,7 +578,7 @@ void KeyFrame::SetMapPoints(std::vector<MapPoint*> spMapPoints)
             {
                 // cout << " map point [" << id <<"] not found in KF " << mnId << endl;
                 mvpMapPoints[j] = static_cast<MapPoint*>(NULL);
-            }
+            }*/
 
         }
 

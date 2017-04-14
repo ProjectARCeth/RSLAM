@@ -92,8 +92,47 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 	{
 		string bin=".bin";
 		LoadMap(loadName+bin);
+
+
+
+
+
+        //Sorting-------------------------------------------------
+        std::vector<MapPoint*> MapPointPtr = mpMap->GetAllMapPoints();
+        unsigned int max_id = 0;
+        for(std::vector<MapPoint*>::iterator mit=MapPointPtr.begin(); mit !=MapPointPtr.end(); mit++)  {
+
+                    if ((*mit)->mnId > max_id) {
+                        max_id = (*mit)->mnId;
+                    }
+        }
+        std::cout<<std::endl<<max_id<<std::endl;
+
+
+        std::vector<MapPoint*> sortedPtr;
+
+        for(unsigned int i=0;i <= max_id; i++) {
+            sortedPtr.push_back(NULL);
+        }
+
+        unsigned id;
+        for(std::vector<MapPoint*>::iterator mit=MapPointPtr.begin(); mit !=MapPointPtr.end(); mit++)  {
+            id = (*mit)->mnId;
+            sortedPtr[id] = *mit;
+        }       
+
+        //Sorting-----------------------------------------------------------
         
+
+
+
+
+
+
+
         //mpKeyFrameDatabase->set_vocab(mpVocabulary);
+
+
        
         vector<ORB_SLAM2::KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
         for (vector<ORB_SLAM2::KeyFrame*>::iterator it = vpKFs.begin(); it != vpKFs.end(); ++it) {
@@ -102,7 +141,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
             (*it)->SetMap(mpMap);
             (*it)->ComputeBoW();
             mpKeyFrameDatabase->add(*it);
-            (*it)->SetMapPoints(mpMap->GetAllMapPoints());
+            (*it)->SetMapPoints(sortedPtr);
             (*it)->SetSpanningTree(vpKFs);
             (*it)->SetGridParams(vpKFs);
 
