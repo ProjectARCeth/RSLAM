@@ -114,8 +114,8 @@ template<class Archive>
         ar & const_cast<long unsigned int &> (mnMaxKFid);
 
         ar & test_data;
-        if (test_data == TEST_DATA)
-            cout <<">>Map Loading Validated as True" << endl;
+        if (test_data == TEST_DATA){}
+            // cout <<">>Map Loading Validated as True" << endl;
         else
             cout <<"ERROR Map Loading Validated as False: Got -" << test_data << " :( Check Load Save sequence" << endl;
 

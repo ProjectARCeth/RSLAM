@@ -106,7 +106,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
                         max_id = (*mit)->mnId;
                     }
         }
-        std::cout<<std::endl<<max_id<<std::endl;
+        // std::cout<<std::endl<<max_id<<std::endl;
 
 
         std::vector<MapPoint*> sortedPtr;
