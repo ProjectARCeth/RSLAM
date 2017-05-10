@@ -351,7 +351,7 @@ int Optimizer::PoseOptimization(Frame *pFrame, cv::Mat *priorRefPose)
         g2o::EdgeStereoSE3FullPose* refEdge = new g2o::EdgeStereoSE3FullPose();
         refEdge->setMeasurement((vSE3->estimate()*vSE3Ref->estimate().inverse()).toMinimalVector());
 
-        Eigen::Matrix<double,6,6> parentInfo = Eigen::Matrix<double,6,6>::Identity()*0.001;
+        Eigen::Matrix<double,6,6> parentInfo = Eigen::Matrix<double,6,6>::Identity()*1000;
         refEdge->setInformation(parentInfo);
 
         refEdge->setVertex(0, optimizer.vertex(0));

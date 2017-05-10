@@ -400,6 +400,7 @@ void Tracking::Track()
                     if(mVelocity.empty() || mCurrentFrame.mnId<mnLastRelocFrameId+2)
                     {
                         bOK = TrackReferenceKeyFrame();
+                        if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME" << std::endl;
                     }
                     else
                     {
@@ -407,6 +408,8 @@ void Tracking::Track()
                         if(!bOK)
                         {
                             bOK = TrackReferenceKeyFrame();
+                            counter++;
+                            if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME LATER " << counter << std::endl;
                         }
                     }
                     break;
@@ -414,7 +417,7 @@ void Tracking::Track()
                 case LOST:
                     bOK = Relocalization();
                     found_init_pose = bOK;
-                    cout << "Relocalizing..." << bOK << endl;
+                    cout << "RELOCALIZING." << bOK << endl;
                     break;
 
                 case DEAD_RECKONING:
@@ -442,6 +445,7 @@ void Tracking::Track()
             {
                 bOK = Relocalization();
                 found_init_pose = bOK;
+                if(bOK) std::cout << "RELOCALIZATION worked !" << std::endl;
                 // if (!bOK)
                 // {
                 //     mState = LOST;
@@ -459,6 +463,7 @@ void Tracking::Track()
                     else
                     {
                         bOK = TrackReferenceKeyFrame();
+                        std::cout << "TRACKED REFERENCE KEYFRAME" << std::endl;
                     }
                 }
                 else
@@ -539,8 +544,12 @@ void Tracking::Track()
         // Update drawer
         mpFrameDrawer->Update(this);
 
-        if(!(mState==LOST))
+        if(!(mState==LOST)) {
             mpMapDrawer->SetCurrentCameraPose(mCurrentFrame.mTcw);
+            //mpMapDrawer->SetCurrentCameraPose(MotionPose);
+            // ViewerPose = (mCurrentFrame.mTcw).col(3);
+            //if(cv::norm(ViewerPose - MotionPose)>1.0) std::cout<<" Difference: "<< ViewerPose - MotionPose<<std::endl;
+        }
 
         if(!mbExtOdo)// Update motion model if using internal model, otherwise it was updated before
         {
@@ -572,8 +581,7 @@ void Tracking::Track()
             mlpTemporalPoints.clear();
 
             // Check if we need to insert a new keyframe
-            if(NeedNewKeyFrame())
-              CreateNewKeyFrame();
+            if(NeedNewKeyFrame()) CreateNewKeyFrame();
 
             // We allow points with high innovation (considererd outliers by the Huber Function)
             // pass to the new keyframe, so that bundle adjustment will finally decide
@@ -925,6 +933,7 @@ bool Tracking::TrackReferenceKeyFrame()
     if(mLastFrame.mTcw.empty())
     {
         return false;
+
     }
 
     // Compute Bag of Words vector
@@ -1052,13 +1061,14 @@ bool Tracking::TrackWithMotionModel()
     UpdateLastFrame();
 
     mCurrentFrame.SetPose(mVelocity*mLastFrame.mTcw);
+    //MotionPose = (mVelocity*mLastFrame.mTcw);//.col(3);
 
     fill(mCurrentFrame.mvpMapPoints.begin(),mCurrentFrame.mvpMapPoints.end(),static_cast<MapPoint*>(NULL));
 
     // Project points seen in previous frame
     int th;
     if(mSensor!=System::STEREO)
-        th=15;
+            th=15;
     else
         th=7;
 
@@ -1242,8 +1252,9 @@ bool Tracking::NeedNewKeyFrame()
             mpLocalMapper->InterruptBA();
             if(mSensor!=System::MONOCULAR)
             {
-                if(mpLocalMapper->KeyframesInQueue()<3)
+                if(mpLocalMapper->KeyframesInQueue()<3){
                     return true;
+                }
                 else
                     return false;
             }
