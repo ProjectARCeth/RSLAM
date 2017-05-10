@@ -400,7 +400,7 @@ void Tracking::Track()
                     if(mVelocity.empty() || mCurrentFrame.mnId<mnLastRelocFrameId+2)
                     {
                         bOK = TrackReferenceKeyFrame();
-                        if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME" << std::endl;
+                        // if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME" << std::endl;
                     }
                     else
                     {
@@ -408,8 +408,8 @@ void Tracking::Track()
                         if(!bOK)
                         {
                             bOK = TrackReferenceKeyFrame();
-                            counter++;
-                            if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME LATER " << counter << std::endl;
+                            // counter++;
+                            // if(bOK) std::cout << "TRACKED WITH REFERENCE FRAME LATER " << counter << std::endl;
                         }
                     }
                     break;
@@ -417,7 +417,7 @@ void Tracking::Track()
                 case LOST:
                     bOK = Relocalization();
                     found_init_pose = bOK;
-                    cout << "RELOCALIZING." << bOK << endl;
+                    // cout << "RELOCALIZING." << bOK << endl;
                     break;
 
                 case DEAD_RECKONING:
@@ -445,7 +445,7 @@ void Tracking::Track()
             {
                 bOK = Relocalization();
                 found_init_pose = bOK;
-                if(bOK) std::cout << "RELOCALIZATION worked !" << std::endl;
+                // if(bOK) std::cout << "RELOCALIZATION worked !" << std::endl;
                 // if (!bOK)
                 // {
                 //     mState = LOST;
@@ -463,7 +463,7 @@ void Tracking::Track()
                     else
                     {
                         bOK = TrackReferenceKeyFrame();
-                        std::cout << "TRACKED REFERENCE KEYFRAME" << std::endl;
+                        // std::cout << "TRACKED REFERENCE KEYFRAME" << std::endl;
                     }
                 }
                 else
